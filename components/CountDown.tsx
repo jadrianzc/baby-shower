@@ -39,7 +39,7 @@ export const CountDown = () => {
 			: 'Ya nació CR7';
 
 	return (
-		<div className='bg-[#5672a6] text-white text-xl font-mono rounded-lg py-1 px-10 inline-block font-bree'>
+		<div className='bg-[#5672a6] text-white text-md font-mono rounded-lg py-1 px-10 inline-block font-bree'>
 			<span>{label}</span>
 		</div>
 	);

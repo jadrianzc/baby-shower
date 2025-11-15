@@ -27,7 +27,7 @@ export default async function Invitados() {
 			style={{ backgroundImage: "url('/bg_main.jpeg')" }}>
 			<div
 				className={`max-w-md w-full ${
-					allData.guests.length > 0 ? 'h-[712px]' : 'h-auto'
+					allData.guests.length > 0 ? 'h-[612px]' : 'h-auto'
 				} bg-white/90 rounded-2xl border-4 border-[#c39f81] px-1 py-2 shadow-xl text-center`}>
 				{/* Título */}
 				<div className='relative w-full flex justify-center items-center gap-0 text-[75px] font-bold text-[#a3b4da] font-alice -translate-y-12'>
@@ -41,7 +41,7 @@ export default async function Invitados() {
 							priority
 							width={150}
 							height={200}
-							className='max-w-max w-auto h-auto'
+							className='w-auto h-auto'
 						/>
 					</div>
 
@@ -56,7 +56,7 @@ export default async function Invitados() {
 					</div>
 
 					{allData.guests.length > 0 && (
-						<div className='h-[310px] overflow-y-auto px-5 scrollbar-thin scrollbar-thumb-[#c39f81] scrollbar-track-transparent'>
+						<div className='h-80 overflow-y-auto px-5 scrollbar-thin scrollbar-thumb-[#c39f81] scrollbar-track-transparent'>
 							<div className='text-[#a3b4da] text-sm grid grid-cols-2 gap-x-6 gap-y-4 auto-rows-min'>
 								{allData.guests.map((guest) => (
 									<div

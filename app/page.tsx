@@ -21,7 +21,7 @@ export default function Home() {
 							priority
 							width={150}
 							height={200}
-							className='max-w-max w-auto h-auto'
+							className='w-auto h-auto'
 						/>
 					</div>
 
