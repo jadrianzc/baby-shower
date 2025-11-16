@@ -28,9 +28,9 @@ export default async function Invitados() {
 			<div
 				className={`max-w-md w-full ${
 					allData.guests.length > 0 ? 'h-[612px]' : 'h-auto'
-				} h-auto! bg-white/90 rounded-2xl border-4 border-[#c39f81] px-1 py-2 shadow-xl text-center`}>
+				} bg-white/90 rounded-2xl border-4 border-[#c39f81] px-1 py-2 shadow-xl text-center`}>
 				{/* Título */}
-				<div className='relative w-full flex justify-center items-center gap-0 text-[75px] font-bold text-[#a3b4da] font-alice -translate-y-12'>
+				<div className='relative w-full h-[200px] flex justify-center items-center gap-0 text-[75px] font-bold text-[#a3b4da] font-alice -translate-y-12!'>
 					<div className='tracking-widest translate-x-6'>BA</div>
 
 					{/* Imagen central */}
@@ -48,7 +48,7 @@ export default async function Invitados() {
 					<div className='tracking-widest -translate-x-6'>BY</div>
 				</div>
 
-				<div className='-translate-y-12 flex flex-col h-[calc(100%-140px)]'>
+				<div className='-translate-y-12 flex flex-col h-[calc(100%-160px)]'>
 					<div>
 						<p className='text-[#c39f81] text-5xl font-light mb-8 font-railey'>
 							Lista de invitados
@@ -56,7 +56,7 @@ export default async function Invitados() {
 					</div>
 
 					{allData.guests.length > 0 && (
-						<div className='h-80 overflow-y-auto px-5 scrollbar-thin scrollbar-thumb-[#c39f81] scrollbar-track-transparent'>
+						<div className='grow overflow-y-auto px-5 scrollbar-thin scrollbar-thumb-[#c39f81] scrollbar-track-transparent'>
 							<div className='text-[#a3b4da] text-sm grid grid-cols-2 gap-x-6 gap-y-4 auto-rows-min'>
 								{allData.guests.map((guest) => (
 									<div
@@ -75,7 +75,7 @@ export default async function Invitados() {
 						</div>
 					)}
 
-					<div className='grow flex justify-center items-end pb-2'>
+					<div className='flex justify-center items-center p-2 pt-4'>
 						<p className='text-[#c39f81] text-2xl font-light font-railey'>
 							Total de invitados: <span className=''>{allData.guests.length}</span>
 						</p>
